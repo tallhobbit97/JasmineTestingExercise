@@ -12,7 +12,10 @@ describe("Servers test (with setup and tear-down)", function() {
     });
   
     afterEach(function() {
-      // teardown logic
+      serverID = 0;
+      allServers = {};
+      let TR = document.querySelector('#server1');
+      TR.remove();
     });
   });
   
